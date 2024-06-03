@@ -11,7 +11,7 @@ Homepage: https://github.com/blueman-project/blueman
 Description: Graphical bluetooth manager
  Blueman is a GTK+ bluetooth management utility for GNOME using bluez D-Bus
  backend.
-Filename: dists/edgef/main/binary-arm64/blueman_2.1.4-1_arm64.deb
+Filename: dists/bullseye/main/binary-arm64/blueman_2.1.4-1_arm64.deb
 Size: 739176
 MD5Sum: 785829a8793bb172b52b45421e01caae
 SHA1: e944397bd217499815989e62e17f73841837585c
@@ -33,7 +33,7 @@ Homepage: https://www.x.org/
 Description: setuid root Xorg server wrapper
  This package provides a wrapper for the Xorg X server, which is
  necessary for legacy drivers and non-Linux kernels.
-Filename: dists/edgef/main/binary-arm64/xserver-xorg-legacy_1.20.11-1_arm64.deb
+Filename: dists/bullseye/main/binary-arm64/xserver-xorg-legacy_1.20.11-1_arm64.deb
 Size: 2288476
 MD5Sum: a9bb570ebfa21b897e47eea932c1d469
 SHA1: 9c2a47c53c015596357d367b0e235dcc0d2a4ef0
