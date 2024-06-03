@@ -1,0 +1,42 @@
+Package: blueman
+Version: 2.1.4-1
+Architecture: arm64
+Maintainer: Christopher Schramm <debian@cschramm.eu>
+Installed-Size: 3159
+Depends: libbluetooth3 (>= 4.91), libc6 (>= 2.17), libglib2.0-0 (>= 2.31.8), dconf-gsettings-backend | gsettings-backend, python3 (<< 3.10), python3 (>= 3.9~), python3:any, dbus, default-dbus-session-bus | dbus-session-bus, bluez (>= 5), bluez-obexd, python3-gi (>= 3.27.2), notification-daemon, librsvg2-common, gnome-icon-theme | mate-icon-theme | elementary-xfce-icon-theme | adwaita-icon-theme | papirus-icon-theme, libpulse-mainloop-glib0, gir1.2-gtk-3.0, gir1.2-gdkpixbuf-2.0, gir1.2-glib-2.0, gir1.2-pango-1.0, python3-cairo, python3-gi-cairo, gir1.2-ayatanaappindicator3-0.1, gir1.2-nm-1.0, policykit-1
+Recommends: pulseaudio-module-bluetooth
+Section: x11
+Priority: optional
+Homepage: https://github.com/blueman-project/blueman
+Description: Graphical bluetooth manager
+ Blueman is a GTK+ bluetooth management utility for GNOME using bluez D-Bus
+ backend.
+Filename: dists/edgef/main/binary-arm64/blueman_2.1.4-1_arm64.deb
+Size: 739176
+MD5Sum: 785829a8793bb172b52b45421e01caae
+SHA1: e944397bd217499815989e62e17f73841837585c
+SHA256: 0cd9afca9d77b99f853fd96ca5c572d3e95bc29a463319662bca85c3c80e48b1
+SHA512: fe3726bf46b461e9576c2dabf180366f7fbd6bfca0350b62d3d69315b8d69243fe82a212460c2d4bd9c91a9777d0af3ff854dbb3f16fdd33515eba75335abde9
+
+Package: xserver-xorg-legacy
+Source: xorg-server
+Version: 2:1.20.11-1
+Architecture: arm64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 2373
+Depends: xserver-common (>= 2:1.20.11-1), libc6 (>= 2.17), debconf (>= 0.5) | debconf-2.0
+Breaks: x11-common (<< 1:7.7+10~), xserver-xorg-core (<< 2:1.17.2-3~)
+Replaces: x11-common (<< 1:7.7+10~), xserver-xorg-core (<< 2:1.17.2-3~)
+Section: x11
+Priority: optional
+Homepage: https://www.x.org/
+Description: setuid root Xorg server wrapper
+ This package provides a wrapper for the Xorg X server, which is
+ necessary for legacy drivers and non-Linux kernels.
+Filename: dists/edgef/main/binary-arm64/xserver-xorg-legacy_1.20.11-1_arm64.deb
+Size: 2288476
+MD5Sum: a9bb570ebfa21b897e47eea932c1d469
+SHA1: 9c2a47c53c015596357d367b0e235dcc0d2a4ef0
+SHA256: d09a72677aaae51f1760675a32f1d436782c3ace2004b38f3dd5008de2ac47e5
+SHA512: 69161f41e6f1999a945d515f82c535d49fd561d18d89ca70c477ff425f34a1ca9ab0b00631ecf5dc6b9d306002daac50dcebfbff81b0e3f80c5245b24c188f6b
+
