@@ -24,7 +24,6 @@ function installRepository() {
   wget -q https://raw.githubusercontent.com/redxa-edge/debpackages/main/public.key
   apt-key add public.key
   cp -r $PREFIX/etc/apt/trusted.gpg $PREFIX/etc/apt/trusted.gpg.d/edge.gpg
-  apt-get update -yq --silent
   printf "Installation successful\n"
 }
 function removeRepository() {
@@ -34,5 +33,5 @@ function removeRepository() {
 
 installRepository
 
-apt install update
+sudo apt update
 
