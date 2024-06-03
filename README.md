@@ -4,7 +4,7 @@ demo apt repository for edge
 run the shell script to install any application present in the repo like:
 
 ```bash
-sudo addRepo.sh -i <packagename>
+sudo addRepo.sh 
 
 ```
 
