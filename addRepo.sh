@@ -19,7 +19,7 @@ function installRepository() {
   if [[ ! -d $PREFIX/etc/apt/sources.list.d ]]; then
     mkdir -p $PREFIX/etc/apt/sources.list.d
   fi
-  echo "deb [trusted=yes] https://redxa-edge.github.io/debpackages/ edge main" >$PREFIX/etc/apt/sources.list.d/edge.repo.list
+  echo "deb [trusted=yes] https://redxa-edge.github.io/debpackages/ bullseye main" >$PREFIX/etc/apt/sources.list.d/edgerepo.list
   rm -rf public.key >/dev/null 2>&1
   wget -q https://raw.githubusercontent.com/redxa-edge/debpackages/main/public.key
   apt-key add public.key
@@ -32,45 +32,7 @@ function removeRepository() {
   printf "Removing successful!\n"
 }
 
-#<<<<----Main section---->>>
-while true; do
-  args=$1
-  if [[ ! -z $args ]]; then
-    case $args in
-      -i|--install) installation=true;;
-      -r|--remove) uninstallation=true;;
-      -*|--*) printf "Invalid argument: $args\n"; exit 1;;
-      *) packages+=($args);;
-    esac
-    shift
-  else
-    break
-  fi
-done
-if [[ $installation == true ]]; then
-  if [[ $uninstallation == true ]]; then
-    printf "Dont use both of -i and -r argunment\n"
-    exit 1
-  fi
-  checkAlreadyInstalled
-  if [[ $alreadyInstalled == true ]]; then
-    printf " Repository is already installed\n"; exit 0
-  else
-    installRepository
-  fi
-fi
+installRepository
 
-if [[ $uninstallation == true ]]; then
-  checkAlreadyInstalled
-  if [[ $alreadyInstalled == true ]]; then
-    removeRepository
-  else
-    printf "Repository not found to remove\n"; exit 1
-  fi
-fi
+apt install update
 
-if [[ ! -z $packages ]]; then
-  for i in ${packages[@]}; do
-    apt install $i -y
-  done
-fi
