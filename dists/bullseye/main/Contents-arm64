@@ -1,3 +1,6 @@
+usr/bin/adbd                                                                     android-tools-adbd
+usr/share/doc/android-tools-adbd/changelog.Debian.gz                             android-tools-adbd
+usr/share/doc/android-tools-adbd/copyright                                       android-tools-adbd
 etc/dbus-1/system.d/org.blueman.Mechanism.conf                                   blueman
 etc/xdg/autostart/blueman.desktop                                                blueman
 lib/systemd/system/blueman-mechanism.service                                     blueman

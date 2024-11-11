@@ -1,3 +1,37 @@
+Package: android-tools-adbd
+Source: android-tools
+Version: 5.1.1.r38-1.1
+Architecture: arm64
+Maintainer: Android Tools Maintainers <android-tools-devel@lists.alioth.debian.org>
+Installed-Size: 133
+Depends: libbsd0 (>= 0.0), libc6 (>= 2.17), libpcre3, libssl1.1 (>= 1.1.0)
+Section: devel
+Priority: extra
+Homepage: https://developer.android.com/tools/help/adb.html
+Description: Android Debug Bridge daemon
+ Android Debug Bridge (adb) is a versatile tool that lets you manage the state
+ of an emulator instance or Android-powered device. It is a client-server
+ program that includes three components:
+ .
+ A client, which runs on your development machine. You can invoke a
+ client from a shell by issuing an adb command. Other Android tools such
+ as the ADT plugin and DDMS also create adb clients.
+ .
+ A server, which runs as a background process on your development
+ machine.  The server manages communication between the client and the
+ adb daemon running on an emulator or device.
+ .
+ A daemon, which runs as a background process on each emulator or device
+ instance.
+ .
+ This package provides the daemon component.
+Filename: dists/bullseye/main/binary-arm64/android-tools-adbd_5.1.1.r38-1.1_arm64.deb
+Size: 50176
+MD5Sum: bd5ca4573217cd940ef5d234bcfa21ef
+SHA1: 7becf5a9bbeac8df7cdec220fad486081e10db39
+SHA256: 93ba9d9a28c60714cd3934fb0c445c791cf5e6bd898d09a4fb9914a70c4764dd
+SHA512: 2fb50efcccbb6ecfd6c67eca754f4e6d064410313dcb8bd001b7c3151e246606306aa47107b869c7334e72096572033f27007d84c26a9178c02e6b6cbccc55c9
+
 Package: blueman
 Version: 2.1.4-1
 Architecture: arm64
